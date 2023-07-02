@@ -90,47 +90,68 @@
 }
 
 .contact .contact-container .contact-form-container form .row4 #submit {
-    background-color: var(--white);
-    height: 170px;
-    width: 170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: var(--black);
-    border: 20px solid ;
-    font-family: var(--Bellefair);
-    transition: 0.3s all ease-in-out;
-    text-transform: uppercase;
-    cursor: pointer;
+  background-color: var(--white);
+  height: 170px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--black);
+  border: 20px solid;
+  font-family: var(--Bellefair);
+  transition: 0.3s all ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .contact .contact-container .contact-form-container form .row4 #submit:hover {
-    border: 20px solid var(--light-greyice-blue);
-
+  border: 20px solid var(--light-greyice-blue);
 }
 
 /* css style for tablet screen */
 
-@media screen and (max-width:820px) {
-
-  .contact-container{
+@media screen and (max-width: 820px) {
+  .contact-container {
     flex-direction: column;
   }
 
-  .contact p{
+  .contact p {
     font-size: 1.5rem;
   }
 
-  .contact .map iframe{
+  .contact .map iframe {
     width: calc(100vw - 4.05rem);
     margin-top: 3rem;
-    height:300px ;
+    height: 300px;
   }
-  
 }
 
+@media screen and (max-width: 450px) {
+  .contact-container {
+    flex-direction: column;
+  }
 
+  .contact p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 3rem 0;
+  }
+
+  .contact .map iframe {
+    width: calc(100vw - 2.05rem);
+  }
+
+  .contact .contact-container .contact-form-container form .row4 #submit {
+    font-size: 1rem;
+    width: 150px;
+    height: 150px;
+  }
+  .contact .contact-container .contact-form-container form .row1 input,
+.contact .contact-container .contact-form-container form .row2 input{
+  font-size: 1rem;
+}
+}

@@ -105,19 +105,18 @@
     column-gap: 0rem;
     position: absolute;
     flex-direction: column;
-    top: 20px;
-    left: -16px;
+    top: 1rem;
+    left: -2.5rem;
     align-items: start;
     justify-content: start;
     padding: 2rem 1rem;
-    background-color: rgba(208, 214, 249,0.7);
+    background-color: rgba(208, 214, 249, 0.7);
     backdrop-filter: blur(5px);
     width: 175px;
     row-gap: 2rem;
     margin: 1rem;
     border-radius: 5px;
   }
-  
 
   .navbar .nav-menu-container .nav-menu .nav-link a {
     color: var(--black);
@@ -139,19 +138,12 @@
     order: 1;
   }
 
-  .navbar .nav-menu-container{
+  .navbar .nav-menu-container {
     order: 2;
     display: none;
   }
 
-  .open-menu{
+  .open-menu {
     display: block !important;
   }
-
-  /* menu animation */
-
- 
-
-
-
 }

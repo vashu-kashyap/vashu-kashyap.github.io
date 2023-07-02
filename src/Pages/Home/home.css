@@ -130,5 +130,6 @@
   .hero .hero-content .button-group a{
     width: 150px;
     height: 150px;
+    font-size: 1rem;
   }
 }
