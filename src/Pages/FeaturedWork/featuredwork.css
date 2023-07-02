@@ -1,0 +1,11 @@
+.featured{
+    background-color: var(--black);
+}
+
+.featured p{
+    font-size: 2.25rem;
+    text-align: center;
+    font-family: var(--Bellefair);
+    color: var(--white);
+    line-height: 5rem;
+}
