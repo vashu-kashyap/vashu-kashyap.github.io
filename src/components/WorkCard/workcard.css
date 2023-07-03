@@ -1,0 +1,87 @@
+.workcard{
+    width: 100%;
+    min-height: 210px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding:1rem;
+    border-bottom: 1px solid var(--light-greyice-blue);
+}
+
+.workcard .card-img{
+    width:250px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.workcard .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.workcard .card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+
+.workcard .card-content .content-container{
+ width: 1000px;
+ 
+}
+
+.workcard .card-content .content-container h3{
+    font-size: 1.875rem;
+    font-family: var(--Barlow-Condensed);
+    font-weight: bold;
+    color: var(--light-greyice-blue);
+    line-height: 3rem;
+}
+
+
+
+.workcard .card-content .content-container p{
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-family: var(--Barlow-Condensed);
+    text-align: left;
+    line-height: normal;
+    color: var(--white);
+    
+}
+
+.workcard .card-content .btn-group-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workcard .card-content .btn-group-date p{
+    font-family: var(--Barlow-Condensed);
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: normal;
+    color: var(--light-greyice-blue);
+}
+
+.workcard .card-content .btn-group-date button{
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    font-family: var(--Barlow-Condensed);
+    color: var(--black);
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.workcard .card-content .btn-group-date button:hover{
+    background-color: var(--light-greyice-blue);
+}
