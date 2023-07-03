@@ -14,6 +14,12 @@ export default function FeaturedWork() {
       <WorkCard/>
       <WorkCard/>
      </div>
+     <div className="explore-more">
+      <h4>Explore My All Projects </h4>
+      <button id='explore-more'>
+        Explore More
+      </button>
+     </div>
     </section>
   )
 }

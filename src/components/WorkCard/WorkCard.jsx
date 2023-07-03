@@ -15,9 +15,9 @@ export default function WorkCard() {
         <div className="btn-group-date">
             <p>3 Jul 2023</p>
             <div className="btn-group">
-                <button id="sharebtn">Share <i class="fa-solid fa-share-nodes"></i></button>
-                <button id="veiwbtn">Veiw Project <i class="fa-regular fa-eye"></i></button>
-                <button id="getcodebtn">Get Code <i class="fa-solid fa-code"></i></button>
+                <button id="sharebtn">Share <i className="fa-solid fa-share-nodes"></i></button>
+                <button id="veiwbtn">Veiw Project <i className="fa-regular fa-eye"></i></button>
+                <button id="getcodebtn">Get Code <i className="fa-solid fa-code"></i></button>
             </div>
         </div>
       </div>
