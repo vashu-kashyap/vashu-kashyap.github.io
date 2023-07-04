@@ -23,7 +23,7 @@ export default function Navbar() {
             <a href="/">Vashu</a>
         </div>
         <div className={showmenu}>
-            <ul className="nav-menu ">
+            <ul className="nav-menu">
                 <li className="nav-link"><a href="/">Home</a></li>
                 <li className="nav-link"><a href="/">About</a></li>
                 <li className="nav-link"><a href="/">Work</a></li>
@@ -33,13 +33,13 @@ export default function Navbar() {
         <div className="social-menu-container">
             <ul className="social-menu">
                 <li className='social-link'>
-                    <a href="/"><img src="./instagram.svg" alt="" /></a>
+                    <a href="https://www.instagram.com/im.vashukashyap/" target='_blank'><i class="fa-brands fa-instagram" targ title='Instagram'></i></a>
                 </li>
                 <li className="social-link">
-                    <a href="/"><img src="./Vector.svg" alt="github-icon" /></a>
+                    <a href="https://github.com/vashu-kashyap" target='_blank'><i class="fa-brands fa-github" targ title='Github'></i></a>
                 </li>
                 <li className="social-link">
-                    <a href="/"><img src="./linkedin.svg" alt="linkdin-icon" /></a>
+                    <a href="https://www.linkedin.com/in/im-vashukashyap/" target='_blank'><i class="fa-brands fa-linkedin-in" targ title='Linkedin'></i></a>
                 </li>
 
             </ul>

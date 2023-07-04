@@ -1,23 +1,23 @@
 import React from "react";
 import './workcard.css'
 
-export default function WorkCard() {
+export default function WorkCard({imgUrl,projectTitle,projectDescription,date,shareUrl,veiwUrl,codeUrl}) {
   return (
     <div className="workcard">
       <div className="card-img">
-        <img src="./project/project-1.jpg" alt="project img" />
+        <img src={imgUrl} alt="project img" />
       </div>
       <div className="card-content">
         <div className="content-container">
-        <h3>Designing Dashboards</h3>
-        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <h3>{projectTitle}</h3>
+        <p>{projectDescription}</p>
         </div>
         <div className="btn-group-date">
-            <p>3 Jul 2023</p>
+            <p>{date}</p>
             <div className="btn-group">
-                <button id="sharebtn">Share <i className="fa-solid fa-share-nodes"></i></button>
-                <button id="veiwbtn">Veiw Project <i className="fa-regular fa-eye"></i></button>
-                <button id="getcodebtn">Get Code <i className="fa-solid fa-code"></i></button>
+                <a href={shareUrl} target="_blank" id="sharebtn">Share <i className="fa-solid fa-share-nodes"></i></a>
+                <a href={veiwUrl} target="_blank" id="veiwbtn">Veiw Project <i className="fa-regular fa-eye"></i></a>
+                <a href={codeUrl} target="_blank" id="getcodebtn">Get Code <i className="fa-solid fa-code"></i></a>
             </div>
         </div>
       </div>

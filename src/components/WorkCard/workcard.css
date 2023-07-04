@@ -71,7 +71,7 @@
     column-gap: 1rem;
 }
 
-.workcard .card-content .btn-group-date button {
+.workcard .card-content .btn-group-date a {
   padding: 0.5rem 1rem;
   border-radius: 100px;
   border: none;
@@ -82,9 +82,10 @@
   font-size: 1.25rem;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
+  text-decoration: none;
 }
 
-.workcard .card-content .btn-group-date button:hover {
+.workcard .card-content .btn-group-date a:hover {
   background-color: var(--light-greyice-blue);
 }
 
