@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import FeaturedWork from "./Pages/FeaturedWork/FeaturedWork";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <FeaturedWork/>
         <Contact/>
       </main>
+      <Footer/>
     </>
   );
 }
