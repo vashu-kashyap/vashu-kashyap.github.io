@@ -1,5 +1,4 @@
 .hero {
-  background-color: var(--black);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -38,28 +37,6 @@
   align-content: center;
   column-gap: 3rem;
   margin-top: 2rem;
-}
-
-.hero .hero-content .button-group a {
-  background-color: var(--white);
-  height: 170px;
-  width: 170px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: var(--black);
-  border: 20px solid var(--black);
-  font-family: var(--Bellefair);
-  transition: 0.3s all ease-in-out;
-  text-transform: uppercase;
-}
-
-.hero .hero-content .button-group a:hover {
-  border: 20px solid var(--light-greyice-blue);
 }
 
 .hero .hero-img {
@@ -123,13 +100,4 @@
     padding: 1rem;
   }
 
-  .hero .hero-content .button-group{
-    column-gap: 1rem;
-  }
-
-  .hero .hero-content .button-group a{
-    width: 150px;
-    height: 150px;
-    font-size: 1rem;
-  }
 }

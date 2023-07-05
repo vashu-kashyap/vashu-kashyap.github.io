@@ -1,15 +1,14 @@
-import React,{ useState }  from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import Subheading from "../../components/subheading/Subheading";
-import emailjs from "emailjs-com"
+import emailjs from "emailjs-com";
 export default function Contact() {
-
-  const [formData,setFormData] = useState({
-    firstName:'',
-    lastName:'',
-    email:'',
-    suject:'',
-    message:'',
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    suject: "",
+    message: "",
   });
 
   const handleInputChange = (e) => {
@@ -32,7 +31,6 @@ export default function Contact() {
       lastName: formData.lastName, // Include the last name in emailParams
     };
 
-  
     emailjs
       .send(
         "service_caxh899",
@@ -41,7 +39,6 @@ export default function Contact() {
         "cHIgtR0FcPpjwrk3b"
       )
       .then((response) => {
-        console.log("Email sent successfully:", response);
         // Handle success here (e.g., show a success message to the user)
       })
       .catch((error) => {
@@ -49,7 +46,6 @@ export default function Contact() {
         // Handle error here (e.g., show an error message to the user)
       });
   };
-
 
   return (
     <section className="contact padding_x">
@@ -59,22 +55,45 @@ export default function Contact() {
         <div className="contact-form-container">
           <form onSubmit={handleSubmit}>
             <div className="row1">
-              <input type="text" name="firstName" placeholder="First Name" onChange={handleInputChange} />
-              <input type="text" name="lastName" placeholder="Last Name" onChange={handleInputChange} />
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                onChange={handleInputChange}
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                onChange={handleInputChange}
+              />
             </div>
             <div className="row2">
               <input
                 type="email"
                 name="email"
-                placeholder="Enter Your Email Addersh" onChange={handleInputChange}
+                placeholder="Enter Your Email Addersh"
+                onChange={handleInputChange}
               />
-              <input type="text" name="subject" placeholder="Subject" onChange={handleInputChange} />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                onChange={handleInputChange}
+              />
             </div>
             <div className="row3">
-              <textarea name="message"  placeholder="Type Your Message" onChange={handleInputChange}></textarea>
+              <textarea
+                name="message"
+                placeholder="Type Your Message"
+                onChange={handleInputChange}
+              ></textarea>
             </div>
             <div className="row4">
-              <button id="submit">Send Message</button>
+              <button id="submit">
+                Send Message
+                <div className="overlay"></div>
+              </button>
             </div>
           </form>
         </div>
@@ -84,7 +103,7 @@ export default function Contact() {
             width="560px"
             height="530"
             title="embeded map"
-            style={{border:'0'}}
+            style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

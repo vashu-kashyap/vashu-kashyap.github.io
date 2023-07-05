@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import Circlebtn from "../../components/Circle-button/Circlebtn";
 
 export default function Home() {
   // WhatsApp number and pre-filled message
@@ -22,10 +23,8 @@ export default function Home() {
           </h1>
           <p>"Turning your ideas into reality with front-end development"</p>
           <div className="button-group">
-            <a href={cvURL} download='Resume-Vashu-Kashyap'>Download Resume</a>
-            <a href={whatsappURL} target="_blank">
-              Hire Me
-            </a>
+           <Circlebtn btnlink={cvURL} btnvalue={"download resume"}/>
+           <Circlebtn btnlink={whatsappURL} btnvalue={"Hire Me"}/>
           </div>
         </div>
         <div className="hero-img">

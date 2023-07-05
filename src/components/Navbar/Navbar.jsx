@@ -33,13 +33,13 @@ export default function Navbar() {
         <div className="social-menu-container">
             <ul className="social-menu">
                 <li className='social-link'>
-                    <a href="https://www.instagram.com/im.vashukashyap/" et='_blank'><i className="fa-brands fa-instagram"  title='Instagram'></i></a>
+                    <a href="https://www.instagram.com/im.vashukashyap/" target='_blank'><i className="fa-brands fa-instagram"  title='Instagram'></i></a>
                 </li>
                 <li className="social-link">
-                    <a href="https://github.com/vashu-kashyap" et='_blank'><i className="fa-brands fa-github"  title='Github'></i></a>
+                    <a href="https://github.com/vashu-kashyap" target='_blank'><i className="fa-brands fa-github"  title='Github'></i></a>
                 </li>
                 <li className="social-link">
-                    <a href="https://www.linkedin.com/in/im-vashukashyap/" et='_blank'><i className="fa-brands fa-linkedin-in"  title='Linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/im-vashukashyap/" target='_blank'><i className="fa-brands fa-linkedin-in"  title='Linkedin'></i></a>
                 </li>
 
             </ul>

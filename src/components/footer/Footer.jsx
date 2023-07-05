@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import Circlebtn from '../Circle-button/Circlebtn'
 
 const Footer = () => {
   return (
@@ -28,13 +29,19 @@ const Footer = () => {
         <div className="footer-social-link">
             <h5>Follow Me</h5>
             <ul className="social-menu">
-                <li className="social-link"><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                <li className="social-link"><a href="#"><i className="fa-brands fa-github"></i></a></li>
-                <li className="social-link"><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
+               <li className='social-link'>
+                    <a href="https://www.instagram.com/im.vashukashyap/" target='_blank'><i className="fa-brands fa-instagram"  title='Instagram'></i></a>
+                </li>
+                <li className="social-link">
+                    <a href="https://github.com/vashu-kashyap" target='_blank'><i className="fa-brands fa-github"  title='Github'></i></a>
+                </li>
+                <li className="social-link">
+                    <a href="https://www.linkedin.com/in/im-vashukashyap/" target='_blank'><i className="fa-brands fa-linkedin-in"  title='Linkedin'></i></a>
+                </li>
             </ul>
         </div>
         <div className="contact-btn">
-            <a href="">Contact Me</a>
+           <Circlebtn btnvalue={"Contact me"}/>
         </div>
 
       </div>
