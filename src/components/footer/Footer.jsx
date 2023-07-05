@@ -28,9 +28,9 @@ const Footer = () => {
         <div className="footer-social-link">
             <h5>Follow Me</h5>
             <ul className="social-menu">
-                <li className="social-link"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li className="social-link"><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li className="social-link"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li className="social-link"><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                <li className="social-link"><a href="#"><i className="fa-brands fa-github"></i></a></li>
+                <li className="social-link"><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
         </div>
         <div className="contact-btn">
