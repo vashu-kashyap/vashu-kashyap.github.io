@@ -7,7 +7,7 @@ export default function Contact() {
     firstName: "",
     lastName: "",
     email: "",
-    suject: "",
+    subject: "",
     message: "",
   });
 
@@ -40,6 +40,7 @@ export default function Contact() {
       )
       .then((response) => {
         // Handle success here (e.g., show a success message to the user)
+        
       })
       .catch((error) => {
         console.error("Email sending failed:", error);
