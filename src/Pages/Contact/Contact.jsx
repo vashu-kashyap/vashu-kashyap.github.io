@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact padding_x">
+    <section className="contact padding_x" id="contact">
       <Subheading subheading={"#Contact Me"} />
       <p>Get in touch and let's create something amazing together</p>
       <div className="contact-container">

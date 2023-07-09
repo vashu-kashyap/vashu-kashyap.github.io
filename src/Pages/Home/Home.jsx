@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import Circlebtn from "../../components/Circle-button/Circlebtn";
 
+
 export default function Home() {
   // WhatsApp number and pre-filled message
   const whatsappNumber = "+918287651128"; // Replace with your WhatsApp number (including country code)
@@ -14,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="hero">
+      <section className="hero" id="home">
         <div className="hero-content">
           <h1>
             HEY! I’m Vashu, <br />

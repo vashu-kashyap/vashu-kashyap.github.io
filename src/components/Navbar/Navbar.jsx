@@ -5,6 +5,7 @@ export default function Navbar() {
 
  const[menuopen,setMenuopen] = useState('./menuopen.svg')
  const[showmenu,setShowmenu] = useState('nav-menu-container scale-up-center')
+ const[activeLink,setActiveLink]= useState('home')
  
  const handletoggle = ()=>{
     if (menuopen === './menuopen.svg') {
@@ -16,6 +17,10 @@ export default function Navbar() {
     }
  }
 
+ const handleclick = (link) =>{
+    setActiveLink(link)
+ }
+
   return (
     <>
      <nav className='navbar'>
@@ -24,10 +29,10 @@ export default function Navbar() {
         </div>
         <div className={showmenu}>
             <ul className="nav-menu">
-                <li className="nav-link"><a href="/">Home</a></li>
-                <li className="nav-link"><a href="/">About</a></li>
-                <li className="nav-link"><a href="/">Work</a></li>
-                <li className="nav-link"><a href="/">Contact</a></li>
+                <li className="nav-link"><a className={activeLink === 'home'?'active' : ''} href="#home" onClick={() => handleclick('home')}>Home</a></li>
+                <li className="nav-link"><a className={activeLink === 'about'?'active' : ''} href="/about" onClick={() => handleclick('about')}>About</a></li>
+                <li className="nav-link"><a className={activeLink === 'work'?'active' : ''} href="#work" onClick={() => handleclick('work')}>Work</a></li>
+                <li className="nav-link"><a className={activeLink === 'contact'?'active' : ''} href="#contact" onClick={() => handleclick('contact')}>Contact</a></li>
             </ul>
         </div>
         <div className="social-menu-container">

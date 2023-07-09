@@ -7,15 +7,15 @@ import Footer from "./components/footer/Footer";
 export default function App() {
   return (
     <>
-      <header>
-        <Navbar />
-        <Home />
-      </header>
-      <main>
-        <FeaturedWork/>
-        <Contact/>
-      </main>
-      <Footer/>
+          <header>
+            <Navbar />
+          </header>
+           <main>
+            <Home/>
+            <FeaturedWork/>
+            <Contact/>
+           </main>
+          <Footer />
     </>
   );
 }

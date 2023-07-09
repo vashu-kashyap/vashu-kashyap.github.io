@@ -20,7 +20,7 @@ useEffect(()=>{
 }, [])
 
   return (
-    <section className='featured padding_x'>
+    <section className='featured padding_x' id='work'>
      <Subheading subheading={'#Featured Work'}/>
      <p>To be successful, the first thing to do is fall in love with your work.</p>
      <div className="featured-wrok-container">

@@ -1,13 +1,15 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color:rgb(21,22,32);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 6rem;
-  position: absolute;
   min-width: 100%;
+  position: fixed;
   z-index: 1;
   backdrop-filter: blur(81.4%);
+  top: 0;
+  right: 0;
 }
 
 .navbar .nav-brand a {
@@ -52,7 +54,7 @@
   align-items: center;
   column-gap: 2rem;
 }
-.navbar .social-menu-container .social-menu .social-link{
+.navbar .social-menu-container .social-menu .social-link {
   list-style: none;
 }
 
@@ -64,12 +66,17 @@
   transition: 0.3s all ease-in-out;
 }
 
-.navbar .social-menu-container .social-menu .social-link a:hover{
+.navbar .social-menu-container .social-menu .social-link a:hover {
   color: var(--light-greyice-blue);
 }
 
 .navbar .menu-btn {
   display: none;
+}
+
+.navbar .nav-menu-container .nav-menu .nav-link .active{
+  color: var(--light-greyice-blue);
+  border-bottom: 3px solid var(--light-greyice-blue);
 }
 
 /* css style for responsive desgin */
