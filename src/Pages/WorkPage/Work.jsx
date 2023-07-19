@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import "./featuredwork.css";
+import React, { useEffect,useState } from "react";
+import "./work.css";
 import Subheading from "../../components/subheading/Subheading";
 import WorkCard from "../../components/WorkCard/WorkCard";
 
-export default function FeaturedWork() {
+const Work = () => {
   let [featuredData, setFeaturedData] = useState([]);
 
   // fetching data of featured project
@@ -22,12 +22,10 @@ export default function FeaturedWork() {
   }, []);
 
   return (
-    <section className="featured padding_x" id="work">
-      <Subheading subheading={"#Featured Work"} />
-      <p>
-        To be successful, the first thing to do is fall in love with your work.
-      </p>
-      <div className="featured-wrok-container">
+    <section className="padding_x">
+      <Subheading subheading={"#Work"} />
+
+      <div className="work-container">
         {featuredData.map((item, index) => {
           return (
             <WorkCard
@@ -43,12 +41,8 @@ export default function FeaturedWork() {
           );
         })}
       </div>
-      <div className="explore-more">
-        <h4>Explore My All Projects On GitHub </h4>
-        <a href="https://github.com/vashu-kashyap?tab=repositories" target="_blank">
-          <button id="explore-more">Explore More</button>
-        </a>
-      </div>
     </section>
   );
-}
+};
+
+export default Work;
