@@ -80,7 +80,7 @@ footer {
 
 footer .copywrite  p{
   color: #fff;
-  font-size: 0.87rem;
+  font-size: 0.8rem;
   font-family: var(--Bellefair);
   letter-spacing: 1px;
   text-align: center;
@@ -97,14 +97,24 @@ footer .copywrite  p{
   }
 
   .footer-container .footer-nav-link ul li a{
-    font-size: 0.87rem;
+    font-size: 0.8rem;
   }
 
   .footer-container .social-link a{
-    font-size: 0.87 ;
+    font-size: 0.8 ;
   }
 
   footer .copywrite  p{
-    font-size: 0.87rem;
+    font-size: 0.8rem;
+  }
+  .footer-container {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+    border-bottom: 1px solid white;
+    padding: 0 0 1rem 0;
+    column-gap: 2rem;
   }
 }

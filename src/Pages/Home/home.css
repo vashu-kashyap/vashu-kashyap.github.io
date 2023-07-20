@@ -40,15 +40,21 @@
 }
 
 .hero .hero-img {
-  width: 50vw;
-  height: 90vh;
+  width: 500px;
+  height: 500px;
   margin-top: 3.6rem;
+  border-radius: 50%;
+  background-color: rgba(208, 214, 249, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .hero .hero-img img {
   width: 100%;
-  height: 100%;
+  height:100% ;
   object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+  transform: rotate(8deg);
 }
 
 /* reponsive style for tablet */
@@ -57,25 +63,27 @@
   .hero {
     flex-direction: column-reverse;
     padding: 0 2rem;
+    justify-content: flex-end;
+    height: fit-content;
   }
 
   .hero .hero-content {
     width: 100vw;
     align-items: center;
     text-align: center;
+    ;
   }
 
   .hero .hero-img {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 400px;
+    max-height: 400px;
     position: relative;
-    border-radius: 10px;
+    border-radius: 50%;
+    margin-top: 0rem;
+    margin-top: 5rem;
   }
 
-  .hero .hero-img img {
-    position: absolute;
-    right: 3rem;
-  }
+ 
 }
 
 @media screen and (max-width: 450px) {
@@ -83,21 +91,33 @@
     padding:1rem;
   }
 
+  .hero .hero-content{
+    margin-top: 1rem;
+  }
+
   .hero .hero-img {
     width: 350px;
     height: 350px;
-    position: relative;
-    border-radius: 10px;
+    border-radius: 50%;
+    margin-top: 4rem;
   }
 
   .hero .hero-content h1 {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
+    margin-top: 0rem;
     
   }
   .hero .hero-content p{
     line-height: 2rem;
     padding: 1rem;
+    margin-top: 0;
+    
+  }
+
+  .hero .hero-content .button-group {
+   
+    margin-top: 1rem;
   }
 
 }

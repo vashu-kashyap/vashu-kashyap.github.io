@@ -128,8 +128,8 @@
     align-items: start;
     justify-content: start;
     padding: 2rem 1rem;
-    background-color: rgba(208, 214, 249, 0.7);
-    backdrop-filter: blur(5px);
+    background-color: rgba(208, 214, 249, 0.3);
+    backdrop-filter: blur(10px);
     width: 175px;
     row-gap: 2rem;
     margin: 1rem;
@@ -164,4 +164,11 @@
   .open-menu {
     display: block !important;
   }
+
+  .navbar .nav-menu-container .nav-menu .nav-link .active{
+    color: var(--white);
+    border-bottom: 0px ;
+  }
+
+ 
 }

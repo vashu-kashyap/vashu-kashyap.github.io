@@ -6,23 +6,23 @@ const Footer = () => {
   return (
     <footer className='padding_x'>
       <div className="footer-logo ">
-        <a href="">Vashu</a>
+        <a href="#home">Vashu</a>
       </div>
       <div className="footer-container">
         <div className="footer-nav-link">
             <h5>Useful Links</h5>
             <ul className="footer-menu">
                 <li className="footer-menu-link">
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li className="footer-menu-link">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li className="footer-menu-link">
-                    <a href="#">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li className="footer-menu-link">
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="contact-btn">
-           <Circlebtn btnvalue={"Contact me"}/>
+           <Circlebtn btnvalue={"Contact me"} btnlink={'tel:+918287651128'} />
         </div>
 
       </div>

@@ -11,7 +11,7 @@ export default function Home() {
   ); // Pre-filled message
   // WhatsApp URL
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-  const cvURL = './Resume-Vashu-Kashyap.pdf'; //  URL of  CV file
+  const cvURL = './Vashu Kasyap Resume.pdf'; //  URL of  CV file
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-img">
-          <img src="./pngwing.com.png" alt="hero-img" />
+          <img src="./vashu.png" alt="hero-img" />
           <div className="mask"></div>
         </div>
       </section>
