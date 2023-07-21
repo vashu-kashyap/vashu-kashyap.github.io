@@ -19,18 +19,17 @@ export default function Home() {
         <div className="hero-content">
           <h1>
             HEY! I’m Vashu, <br />
-            A FORNT-END DEVELOPER <br />
+            A FRONT-END DEVELOPER <br />
             Based in INDIA
           </h1>
           <p>"Turning your ideas into reality with front-end development"</p>
           <div className="button-group">
-           <Circlebtn btnlink={cvURL} btnvalue={"download resume"}/>
+           <Circlebtn btnlink={cvURL} btnvalue={"Get Cv"}/>
            <Circlebtn btnlink={whatsappURL} btnvalue={"Hire Me"}/>
           </div>
         </div>
         <div className="hero-img">
-          <img src="./vashu.png" alt="hero-img" />
-          <div className="mask"></div>
+          <img src="./vashu.png" alt="Vashu Kashyap" />
         </div>
       </section>
     </>

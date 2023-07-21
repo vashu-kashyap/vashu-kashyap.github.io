@@ -92,7 +92,7 @@ export default function Contact() {
             </div>
             <div className="row4">
               <button id="submit">
-                Send Message
+                Send 
                 <div className="overlay"></div>
               </button>
             </div>

@@ -45,6 +45,9 @@ export default function Navbar() {
         scrollPosition < sectionTop + sectionHeight - 100
       ) {
         setActiveLink(section.id);
+        setShowmenu("nav-menu-container scale-up-center");
+        setMenuopen("./menuopen.svg");
+
       }
     });
   };

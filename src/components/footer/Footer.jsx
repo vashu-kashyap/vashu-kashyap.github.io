@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="contact-btn">
-           <Circlebtn btnvalue={"Contact me"} btnlink={'tel:+918287651128'} />
+           <Circlebtn btnvalue={"Contact "} btnlink={'tel:+918287651128'} />
         </div>
 
       </div>
